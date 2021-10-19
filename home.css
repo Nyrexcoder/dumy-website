@@ -23,57 +23,77 @@ footer p{
 .d-flex{
     margin: auto;
 }
+
 #myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat; /* Do not repeat the icon image */
-    width: 100%; /* Full-width */
-    font-size: 16px; /* Increase font-size */
-    padding: 12px 20px 12px 40px; /* Add some padding */
-    border: 1px solid #ddd; /* Add a grey border */
-    margin-bottom: 12px; /* Add some space below the input */
-  }
-  
-  #myUL {
-      height: 100%;
-      width: 100%;
-    /* Remove default list styling */
-    display: none;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  #myUL li a {
-    border: 1px solid #ddd; /* Add a border to all links */
-    margin-top: -1px; /* Prevent double borders */
-    background-color: #f6f6f6; /* Grey background color */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove default text underline */
-    font-size: 18px; /* Increase the font-size */
-    color: black; /* Add a black text color */
-    display: block; /* Make it into a block element to fill the whole list */
-  }
-  
-  #myUL li a:hover:not(.header) {
-    background-color: #eee; /* Add a hover effect to all links, except for headers */
-  }
-/* responsive css code */
+  background-image: url('/css/searchicon.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
 
-/* // X-Small devices (portrait phones, less than 576px) */
-/* // No media query for `xs` since this is the default in Bootstrap */
+#myUL {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-/* // Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) { ... } */
+#myUL li a {
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
 
-/* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { ... } */
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
 
-/* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { ... } */
+.virtical-menu{
+  height: 150px;
+  overflow-y: auto;
+}
 
-/* // X-Large devices (large desktops, 1200px and up) */
-/* @media (min-width: 1200px) { ... } */
+#myDIV{
+  display: none;
+}
+#myInput{
+  border: 2px solid rgb(38, 96, 134);
+  border-radius: 25px;
+}
+#myInput:hover{
+  border: 2px solid rgb(16, 69, 104);
+}
 
-/* // XX-Large devices (larger desktops, 1400px and up) */
-/* @media (min-width: 1400px) { ... } */
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon {
+  padding: 18px;
+  color: rgb(38, 96, 134);
+  min-width: 50px;
+  text-align: center;
+}
+/* .icon:hover{
+  color: rgb(16, 69, 104);
+} */
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
